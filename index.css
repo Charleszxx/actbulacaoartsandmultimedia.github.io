@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+	font-family: 'Montserrat';
+}
+body{
+	min-height: 100vh;
+	background: #303030;
+}
+.image{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image img{
+	max-width: 30%;
+	max-height: 30%;
+	animation: fadeIn 1s;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+.title h1{
+	color: white;
+	letter-spacing: 30px;
+	animation: fadeIn 2s;
+}
+.motto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2% 0px;	
+}
+.motto h1{
+	color: white;
+	font-weight: 100;
+	font-size: 1.8rem;
+	letter-spacing: 20px;
+	animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@media(max-aspect-ratio:16/9){
+	body{
+		min-height: 30vh;
+		width: 100%;
+		padding: 50% 0px;
+	}
+	.image{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.image img{
+		max-width: 30%;
+		max-height: 30%;
+		animation: fadeIn 1s;
+	}
+	.title{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+	.title h1{
+		color: white;
+		font-size: 1rem;
+		letter-spacing: 5px;
+		animation: fadeIn 2s;
+	}
+	.motto{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2% 0px;	
+	}
+	.motto h1{
+		color: white;
+		font-size: 0.9rem;
+		font-weight: 100;
+		letter-spacing: 5px;
+		animation: fadeIn 3s;
+	}
+}
